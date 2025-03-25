@@ -61,15 +61,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.className}`}>
 
-      <body className="relative min-h-screen">
-        <div className="absolute inset-0 -z-10">
-
-        <div className="w-full h-full bg-neutral-900">
-          <ShootingStars />
-          <StarsBackground />
-        </div>
-      </div>
-
       <head>
         <link
           rel="alternate"
@@ -90,6 +81,15 @@ export default function RootLayout({
           title="JSON Feed"
         />
       </head>
+
+      <body className="relative min-h-screen">
+        <div className="absolute inset-0 -z-10">
+
+        <div className="w-full h-full bg-neutral-900">
+          <ShootingStars />
+          <StarsBackground />
+        </div>
+      </div>
 
        <ThemeProvider
           attribute="class"
