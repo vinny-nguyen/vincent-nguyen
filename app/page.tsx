@@ -43,6 +43,7 @@ export default function Page() {
           </a>
           !
         </p>
+        <p>OR check out <a href="projects">what I've built</a>!</p>
       </div>
     </section>
   );
