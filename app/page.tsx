@@ -1,7 +1,15 @@
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
+import clsx from "clsx";
 import { socialLinks } from "./config";
 
 export default function Page() {
+
+  // const [isOpen, setIsOpen] = useState(false);
+  // const openModal = () => setIsOpen(true);
+  // const closeModal = () => setIsOpen(false);
+
   return (
     <section>
       <Image
