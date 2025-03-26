@@ -1,5 +1,6 @@
 "use client";
 import { cn } from "../lib/utils";
+import { useTheme } from "next-themes";
 import React, { useEffect, useState, useRef } from "react";
 
 interface ShootingStar {
@@ -52,8 +53,13 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
   starHeight = 1,
   className,
 }) => {
+  // const { theme } = useTheme();
   const [star, setStar] = useState<ShootingStar | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
+
+  // const isDark = theme === "dark";
+  // starColor = isDark ? "#FACC15" : "#9E00FF";  // e.g., yellow in dark mode, purple in light
+  // trailColor = isDark ? "#FFFFFF" : "#2EB9DF";
 
   useEffect(() => {
     const createStar = () => {
@@ -134,9 +140,13 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
       )}
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: trailColor, stopOpacity: 0 }} />
+          <stop 
+            offset="0%"
+            className="stopColor-[#2EB9DF] dark:stopColor-[#FFF]"
+            style={{ stopColor: trailColor, stopOpacity: 0 }} />
           <stop
             offset="100%"
+            className="stopColor-[#9E00FF ] dark:stopColor-[#FACC15]"
             style={{ stopColor: starColor, stopOpacity: 1 }}
           />
         </linearGradient>
