@@ -155,14 +155,13 @@ table {
   transform: scale(0.5);
   opacity: 0;
 }
-
 .modalImage-enter-active {
   transform: scale(1);
   opacity: 1;
   transition: transform 300ms, opacity 300ms;
 }
 
-.modaImage-exit {
+.modalImage-exit {
   transform: scale(1);
   opacity: 1;
 }
@@ -170,5 +169,5 @@ table {
 .modalImage-exit-active {
   transform: scale(0.5);
   opacity: 0;
-  transform: transform 300ms, opacity 300ms;
+  transition: transform 300ms, opacity 300ms;
 }

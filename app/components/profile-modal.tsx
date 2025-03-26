@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { CSSTransition } from "react-transition-group";
 
 interface ProfileImageModalProps {
   isOpen: boolean;
@@ -16,6 +17,13 @@ export default function ProfileImageModal({
   if (!isOpen) return null;
 
   return (
+    <CSSTransition
+    in={isOpen}
+    timeout={300}
+    classNames="modalImage"
+    unmountOnExit
+    >
+
     <div
       className="
         fixed inset-0 z-50
@@ -35,23 +43,23 @@ export default function ProfileImageModal({
       {/* Image container */}
       <div
         className="relative p-4 z-50"
-        onClick={(e) => e.stopPropagation()} // prevent overlay click
+        onClick={(e) => e.stopPropagation()} // prevent overlay click 
       >
         <Image
           src={imageUrl}
-          alt="Profile Zoom"
+          alt="Vincent Nguyen Zoom"
           width={600}
           height={600}
-          className="rounded-md object-cover"
+          className="
+          rounded-full object-cover w-600 h-600 relative border-4
+        border-stone-200 dark:border-stone-700 
+        bg-stone-50 dark:bg-stone-800 shadow-lg 
+          lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto 
+          sm:float-right sm:ml-5 sm:mb-5
+          hover:grayscale-0"
         />
-        {/* Optional close button */}
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-2 text-white bg-black/40 rounded-full px-2 py-1"
-        >
-          X
-        </button>
       </div>
     </div>
+    </CSSTransition>
   );
 }

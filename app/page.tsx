@@ -17,12 +17,12 @@ export default function Page() {
         src="/vincentnguyenguitar.png"
         alt="Vincent Nguyen"
         className="
-          rounded-full w-48 h-48 relative border-2
+          rounded-full w-48 h-48 relative border-4
         border-stone-200 dark:border-stone-700
         bg-stone-50 dark:bg-stone-800 shadow-lg 
           block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto 
-          sm:float-right sm:ml-5 sm:mb-5 
-          hover:grayscale-0 cursor: pointer"
+          sm:float-right sm:ml-5 sm:mb-5
+          hover:grayscale-0 cursor-pointer"
         // className="w-48 h-48 relative rounded-full border-2 border-stone-200 dark:border-stone-700 shadow-lg overflow-hidden bg-stone-50 dark:bg-stone-800"
         unoptimized
         width={160}
@@ -34,7 +34,7 @@ export default function Page() {
       <ProfileImageModal
         isOpen = {isModalOpen}
         onClose = {CloseModal}
-        imageUrl="vincentnguyenguitar.png"
+        imageUrl="/vincentnguyenguitar.png"
       />
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
@@ -47,17 +47,17 @@ export default function Page() {
         </p>
         <p>
           Currently: <br></br>
-          - Software Developer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="_blank">Stealth</a> 😎<br></br>
-          - Software Developer @ <a href="https://www.uwaft.ca/" target="_blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
-          - Web Developer @ <a href="https://electriummobility.com/" target="_blank">Electrium Mobility</a> 🚵
+          • Software Developer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="_blank">Stealth</a> 😎<br></br>
+          • Software Developer @ <a href="https://www.uwaft.ca/" target="_blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
+          • Web Developer @ <a href="https://electriummobility.com/" target="_blank">Electrium Mobility</a> 🚵
         </p>
         <p>
           Outside of school, you'll find me: <br></br>
-          - Playing sports 🏉⚽<br></br>
-          - Playing music & singing 🎹🎸<br></br>
-          - Shooting <a href="photos">pictures</a> 📸<br></br>
-          - Fishing 🎣<br></br>
-          - Biking 🚵<br></br>
+          • Playing sports 🏉⚽<br></br>
+          • Playing music & singing 🎹🎸<br></br>
+          • Shooting <a href="photos">pictures</a> 📸<br></br>
+          • Fishing 🎣<br></br>
+          • Biking 🚵<br></br>
         </p>
         <p>
           Feel free to{" "}
