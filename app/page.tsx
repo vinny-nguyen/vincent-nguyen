@@ -53,11 +53,10 @@ export default function Page() {
         </p>
         <p>
           Outside of school, you'll find me: <br></br>
-          • Playing sports 🏉⚽<br></br>
-          • Playing music & singing 🎹🎸<br></br>
+          • Playing sports 🏉🏋️<br></br>
+          • Playing <a href="https://www.youtube.com/@vincent.nguyen7/featured" target="_blank">music</a> & singing 🎹🎸<br></br>
           • Shooting <a href="photos">pictures</a> 📸<br></br>
-          • Fishing 🎣<br></br>
-          • Biking 🚵<br></br>
+          • Biking 🚵
         </p>
         <p>
           Feel free to{" "}

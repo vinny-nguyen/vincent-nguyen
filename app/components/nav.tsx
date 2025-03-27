@@ -12,7 +12,7 @@ export function Navbar() {
   return (
     <nav className="lg:mb-16 mb-12 py-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
-        <div className="flex items-center">
+        <div className="flex items-center justify-between mt-6">
           <Link href="/" className="text-3xl font-semibold tracking-tight">
             {metaData.title}
           </Link>
@@ -22,7 +22,8 @@ export function Navbar() {
             <Link
               key={path}
               href={path}
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
+              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200
+              flex align-middle relative"
             >
               {name}
             </Link>
