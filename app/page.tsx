@@ -14,16 +14,15 @@ export default function Page() {
 
   return (
     <section>
-      <div className="relative">
+      <div className="relative w-48 h-48 mx-auto sm:float-right sm:ml-5 sm:mb-5 top-[-30px]">
         <Image
           src="/pictures/vincentnguyenguitar.png"
           alt="Vincent Nguyen"
           className="
-            rounded-full w-48 h-48 relative border-4
+            rounded-full w-full h-full relative border-4
           border-stone-200 dark:border-stone-700
           bg-stone-50 dark:bg-stone-800 shadow-lg 
-            block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto 
-            sm:float-right sm:ml-5 sm:mb-5
+            block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto
             hover:grayscale-0 cursor-pointer"
           // className="w-48 h-48 relative rounded-full border-2 border-stone-200 dark:border-stone-700 shadow-lg overflow-hidden bg-stone-50 dark:bg-stone-800"
           unoptimized
@@ -32,8 +31,7 @@ export default function Page() {
           priority
           onClick={OpenModal}
         />
-        <span className="absolute bottom-[-220px] right-[-20px] text-4x1" style={{ opacity: 1, transform: "scale(1)" }}>
-          <img 
+        <img className="absolute bottom-[-10px] right-[-10px] sm:bottom-[-30px] sm:right-[-20px] w-14 sm:w-20 text-4x1" style={{ opacity: 1, transform: "scale(1.1)" }}
             draggable="false"
             alt="🪐"
             loading="lazy"
@@ -41,9 +39,8 @@ export default function Page() {
             height={80}
             decoding="async"
             src="/pictures/saturn.png"
-            style={{ color: "transparent" }}
-          />
-        </span>
+            // style={{ color: "transparent" }}
+        />
       </div>
 
       <ProfileImageModal
