@@ -13,23 +13,38 @@ export default function Page() {
 
   return (
     <section>
-      <Image
-        src="/pictures/vincentnguyenguitar.png"
-        alt="Vincent Nguyen"
-        className="
-          rounded-full w-48 h-48 relative border-4
-        border-stone-200 dark:border-stone-700
-        bg-stone-50 dark:bg-stone-800 shadow-lg 
-          block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto 
-          sm:float-right sm:ml-5 sm:mb-5
-          hover:grayscale-0 cursor-pointer"
-        // className="w-48 h-48 relative rounded-full border-2 border-stone-200 dark:border-stone-700 shadow-lg overflow-hidden bg-stone-50 dark:bg-stone-800"
-        unoptimized
-        width={160}
-        height={160}
-        priority
-        onClick={OpenModal}
-      />
+      <div className="relative">
+        <Image
+          src="/pictures/vincentnguyenguitar.png"
+          alt="Vincent Nguyen"
+          className="
+            rounded-full w-48 h-48 relative border-4
+          border-stone-200 dark:border-stone-700
+          bg-stone-50 dark:bg-stone-800 shadow-lg 
+            block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto 
+            sm:float-right sm:ml-5 sm:mb-5
+            hover:grayscale-0 cursor-pointer"
+          // className="w-48 h-48 relative rounded-full border-2 border-stone-200 dark:border-stone-700 shadow-lg overflow-hidden bg-stone-50 dark:bg-stone-800"
+          unoptimized
+          width={160}
+          height={160}
+          priority
+          onClick={OpenModal}
+        />
+        <span className="absolute bottom-[-220px] right-[-10px] text-4x1" style={{ opacity: 1, transform: "scale(1)" }}>
+          <img 
+            draggable="false"
+            alt="🪐"
+            loading="lazy"
+            width={80}
+            height={80}
+            decoding="async"
+            src="/pictures/saturn.png"
+            style={{ color: "transparent" }}
+          />
+        </span>
+      </div>
+
 
       <ProfileImageModal
         isOpen = {isModalOpen}
@@ -38,7 +53,7 @@ export default function Page() {
       />
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Hello! I'm Vincent Nguyen 👋
+        Hello there, I'm Vincent! 👋
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>

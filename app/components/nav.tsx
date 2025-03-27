@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
+import { Cedarville_Cursive } from "next/font/google";
+
+const cedarville = Cedarville_Cursive({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const navItems = {
   "/blog": { name: "Blog" },
@@ -13,7 +19,8 @@ export function Navbar() {
     <nav className="lg:mb-16 mb-12 py-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex items-center justify-between mt-6">
-          <Link href="/" className="text-3xl font-semibold tracking-tight">
+          <Link href="/" className={`text-5xl font-semibold tracking-tight ${cedarville.className}`}
+          >
             {metaData.title}
           </Link>
         </div>
