@@ -59,9 +59,9 @@ export default function Page() {
           • Biking 🚵
         </p>
         <p>
-          Feel free to{" "}
-          <a href="#contact">
-            reach out
+          Feel free to take a peek at my{" "}
+          <a href="blog">
+            blog
           </a>
           !
         </p>
