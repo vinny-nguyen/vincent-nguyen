@@ -3,7 +3,7 @@ import { formatDate, getBlogPosts } from "app/lib/posts";
 
 export const metadata = {
   title: "Blog",
-  description: "Vincent Nguyen Blog",
+  description: "My Blog",
 };
 
 export default function BlogPosts() {
@@ -11,7 +11,7 @@ export default function BlogPosts() {
 
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Our Blog</h1>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">My Blog</h1>
       <div>
         {allBlogs
           .sort((a, b) => {
@@ -35,6 +35,9 @@ export default function BlogPosts() {
                 </h2>
                 <p className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
                   {formatDate(post.metadata.publishedAt, false)}
+                </p>
+                <p className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
+                  {post.metadata.location}
                 </p>
               </div>
             </Link>

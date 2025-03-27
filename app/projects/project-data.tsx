@@ -7,15 +7,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Mithril AI",
-    year: 2024,
-    description: "Open science AI resarch lab",
-    url: "https://github.com/mithrilai",
+    title: "TheRiffler",
+    year: 2025,
+    description: "Hack Canada 2025 Finalist 🏆",
+    url: "https://github.com/vinny-nguyen/TheRiffler",
   },
   {
-    title: "OpenDeepLearning",
-    year: 2023,
-    description: "Open source AI education resources",
-    url: "https://opendeeplearning.xyz/",
+    title: "OuiCare",
+    year: 2025,
+    description: "DeltaHacks XI",
+    url: "https://github.com/shadielfares/deltahacks",
+  },
+  {
+    title: "WatClub",
+    year: 2024,
+    description: "UW CS Club Best Project 🏆",
+    url: "https://github.com/Brucewang15/WatClub",
+  },
+  {
+    title: "IntroSpectacle",
+    year: 2024,
+    description: "Hack the North 2024",
+    url: "https://github.com/vinny-nguyen/IntroSpectacle",
   },
 ];

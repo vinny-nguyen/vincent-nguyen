@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <section>
       <Image
-        src="/vincentnguyenguitar.png"
+        src="/pictures/vincentnguyenguitar.png"
         alt="Vincent Nguyen"
         className="
           rounded-full w-48 h-48 relative border-4
@@ -34,7 +34,7 @@ export default function Page() {
       <ProfileImageModal
         isOpen = {isModalOpen}
         onClose = {CloseModal}
-        imageUrl="/vincentnguyenguitar.png"
+        imageUrl="/pictures/vincentnguyenguitar.png"
       />
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">

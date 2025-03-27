@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    icon: "/vincentnguyenguitar.png",
+    icon: "/pictures/vincentnguyenguitarwhite.png",
   },
 };
 

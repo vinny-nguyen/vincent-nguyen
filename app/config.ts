@@ -2,7 +2,8 @@ export const metaData = {
   baseUrl: "https://vinny-nguyen.vercel.app/",
   title: "Vincent Nguyen",
   name: "Vincent Nguyen",
-  ogImage: "/vincentnguyenguitar.jpg",
+  ogImage: "/pictures/vincentnguyenguitar.jpg",
+  location: "Waterloo, Ontario, Canada",
   description:
     "Hello! I'm Vincent Nguyen. I'm a Computer Science at the University of Waterloo.",
 };
