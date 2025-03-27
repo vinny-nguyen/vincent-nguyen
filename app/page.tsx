@@ -31,7 +31,7 @@ export default function Page() {
           priority
           onClick={OpenModal}
         />
-        <span className="absolute bottom-[-220px] right-[-10px] text-4x1" style={{ opacity: 1, transform: "scale(1)" }}>
+        <span className="absolute bottom-[-220px] right-[-20px] text-4x1" style={{ opacity: 1, transform: "scale(1)" }}>
           <img 
             draggable="false"
             alt="🪐"
