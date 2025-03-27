@@ -65,7 +65,7 @@ export default function Page() {
         </p>
 
         <button 
-          onClick={() => window.open("/resume.pdf", "_blank")}
+          onClick={() => window.open("/bruh.pdf", "_blank")}
           className="px-8 py-2 lg:mt-5 mt-0 lg:mb-5 mb-10 flex items-center gap-2 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent hover:border-teal-500"><span>Download my Resume</span><FiDownload/></button>
 
         {/* <p>
