@@ -50,7 +50,7 @@ export default function Page() {
       />
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Hello there, I'm Vincent! 👋
+        Hi there, I'm Vincent! 👋
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
