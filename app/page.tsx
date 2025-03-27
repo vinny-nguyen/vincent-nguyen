@@ -4,6 +4,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { socialLinks } from "./config";
 import ProfileImageModal from "./components/profile-modal";
+import { FiDownload } from "react-icons/fi";
 
 export default function Page() {
 
@@ -45,7 +46,6 @@ export default function Page() {
         </span>
       </div>
 
-
       <ProfileImageModal
         isOpen = {isModalOpen}
         onClose = {CloseModal}
@@ -66,13 +66,18 @@ export default function Page() {
           • Software Developer @ <a href="https://www.uwaft.ca/" target="_blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
           • Web Developer @ <a href="https://electriummobility.com/" target="_blank">Electrium Mobility</a> 🚵
         </p>
-        <p>
+
+        <button 
+          onClick={() => window.open("/resume.pdf", "_blank")}
+          className="px-8 py-2 lg:mt-5 mt-0 lg:mb-5 mb-10 flex items-center gap-2 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent hover:border-teal-500"><span>Download my Resume</span><FiDownload/></button>
+
+        {/* <p>
           Outside of school, you'll find me: <br></br>
           • Playing sports 🏉🏋️<br></br>
           • Playing <a href="https://www.youtube.com/@vincent.nguyen7/featured" target="_blank">music</a> & singing 🎹🎸<br></br>
           • Shooting <a href="photos">pictures</a> 📸<br></br>
           • Biking 🚵
-        </p>
+        </p> */}
         <p>
           Feel free to take a peek at my{" "}
           <a href="blog">
