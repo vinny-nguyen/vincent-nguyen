@@ -31,15 +31,26 @@ export default function Page() {
           priority
           onClick={OpenModal}
         />
-        <img className="absolute bottom-[-10px] right-[-10px] sm:bottom-[-30px] sm:right-[-20px] w-14 sm:w-20 text-4x1" style={{ opacity: 1, transform: "scale(1.1)" }}
-            draggable="false"
-            alt="🪐"
-            loading="lazy"
-            width={80}
-            height={80}
-            decoding="async"
-            src="/pictures/saturn.png"
-            // style={{ color: "transparent" }}   
+        <img className="absolute bottom-[-10px] right-[-10px] sm:bottom-[-30px] sm:right-[-20px] w-14 sm:w-20 text-4x1 block dark:hidden" style={{ opacity: 1, transform: "scale(1.1)" }}
+          draggable="false"
+          alt="🔥"
+          loading="lazy"
+          width={80}
+          height={80}
+          decoding="async"
+          src="/pictures/fire.png"
+          // style={{ color: "transparent" }}   
+        />
+
+        <img className="absolute bottom-[-10px] right-[-10px] sm:bottom-[-30px] sm:right-[-20px] w-14 sm:w-20 text-4x1 hidden dark:block" style={{ opacity: 1, transform: "scale(1.1)" }}
+          draggable="false"
+          alt="🪐"
+          loading="lazy"
+          width={80}
+          height={80}
+          decoding="async"
+          src="/pictures/saturn.png"
+          // style={{ color: "transparent" }}   
         />
       </div>
 
