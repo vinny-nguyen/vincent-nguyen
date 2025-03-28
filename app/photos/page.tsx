@@ -11,7 +11,7 @@ export default function Photos() {
   return (
     <section // Convert ALL photos to .png files
     >
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">My Photos</h1>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">My Photos 📸</h1>
 
       <ImageGrid
         columns={2}

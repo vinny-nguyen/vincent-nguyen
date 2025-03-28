@@ -77,8 +77,8 @@ export default function Page() {
         </p> */}
         <p>
           Feel free to take a peek at my{" "}
-          <a href="blog">
-            blog
+          <a href="photos">
+            Photos
           </a>
           !
         </p>
