@@ -39,7 +39,7 @@ export default function Page() {
             height={80}
             decoding="async"
             src="/pictures/saturn.png"
-            // style={{ color: "transparent" }}
+            // style={{ color: "transparent" }}   
         />
       </div>
 
@@ -69,7 +69,7 @@ export default function Page() {
           className="px-8 py-2 lg:mt-5 mt-0 lg:mb-5 mb-10 flex items-center gap-2 rounded-md bg-teal-500 text-white font-bold transition duration-200 hover:bg-white hover:text-black border-2 border-transparent hover:border-teal-500"><span>Download my Resume</span><FiDownload/></button>
 
         {/* <p>
-          Outside of school, you'll find me: <br></br>
+          Outside of school, you'll find me: <br></br>  
           • Playing sports 🏉🏋️<br></br>
           • Playing <a href="https://www.youtube.com/@vincent.nguyen7/featured" target="_blank">music</a> & singing 🎹🎸<br></br>
           • Shooting <a href="photos">pictures</a> 📸<br></br>
