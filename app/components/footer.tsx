@@ -34,7 +34,7 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-    <footer id="contact" className="block lg:mt-12 mt-8 pb-10 text-[#1C1C1C] dark:text-[#D4D4D4]">
+    <footer id="contact" className="block lg:mt-7 mt-8 pb-10 text-[#1C1C1C] dark:text-[#D4D4D4]">
       {/* UW CS Webring Button: */}
       <div className="flex items-center float-right gap-2 mb-4">
         <a 
