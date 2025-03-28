@@ -44,6 +44,16 @@ export default function Photos() {
       {/* <ImageGrid
         columns={2}
         images={[
+          { src: "/photos/Snowtree.jpg", alt: "Snowtree" },
+          { src: "/photos/Latenightwinterwalk.jpg", alt: "Late Night Winter Walk" },
+          { src: "/photos/Rock Garden.jpg", alt: "Rock Garden" },
+          { src: "/photos/Snowstorm.jpg", alt: "Snowstorm" },
+        ]}
+      /> */}
+
+      {/* <ImageGrid
+        columns={2}
+        images={[
           { src: "/photos/IMG_3127.png", alt: "Biking Guy" },
           { src: "/photos/IMG_2633.png", alt: "Falling Leaves" },
           { src: "/photos/IMG_2991.png", alt: "Golden Hour" },
