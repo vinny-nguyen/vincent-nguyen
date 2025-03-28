@@ -9,8 +9,30 @@ export const metadata: Metadata = {
 
 export default function Photos() {
   return (
-    <section>
+    <section // Convert ALL photos to .png files
+    >
       <h1 className="mb-8 text-2xl font-medium tracking-tight">My Photos</h1>
+
+      <ImageGrid
+        columns={2}
+        images={[
+          { src: "/photos/IMG_2763.png", alt: "QNC Rock Garden" },
+          { src: "/photos/IMG_2179.png", alt: "Green Stairs" },
+          { src: "/photos/IMG_3058.png", alt: "Strawhat" },
+          { src: "/photos/IMG_2251 (2).png", alt: "Stop Sign" },
+        ]}
+      />
+
+      <ImageGrid
+        columns={2}
+        images={[
+          { src: "/photos/IMG_3050.png", alt: "Fall Lampost" },
+          { src: "/photos/IMG_3129.png", alt: "Autumn Leaves" },
+          { src: "/photos/IMG_3191.png", alt: "REV Leaves" },
+          { src: "/photos/IMG_3189.png", alt: "MKV Leaves" },
+        ]}
+      />
+
       {/* <ImageGrid
         columns={2}
         images={[
@@ -20,26 +42,6 @@ export default function Photos() {
           { src: "/photos/Sloth.jpg", alt: "Sloth" },
         ]}
       /> */}
-
-      <ImageGrid
-        columns={2}
-        images={[
-          { src: "/photos/IMG_2763.jpg", alt: "QNC Rock Garden" },
-          { src: "/photos/IMG_2179.png", alt: "Green Stairs" },
-          { src: "/photos/IMG_3058.jpg", alt: "Strawhat" },
-          { src: "/photos/IMG_2251 (2).png", alt: "Stop Sign" },
-        ]}
-      />
-
-      <ImageGrid
-        columns={2}
-        images={[
-          { src: "/photos/IMG_3050.jpg", alt: "Fall Lampost" },
-          { src: "/photos/IMG_3129.png", alt: "Autumn Leaves" },
-          { src: "/photos/IMG_3191.jpg", alt: "REV Leaves" },
-          { src: "/photos/IMG_3189.jpg", alt: "MKV Leaves" },
-        ]}
-      />
 
       {/* <ImageGrid
         columns={2}
