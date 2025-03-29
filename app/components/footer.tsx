@@ -38,11 +38,11 @@ export default function Footer() {
       {/* UW CS Webring Button: */}
       <div className="flex items-center float-right gap-2 mb-4">
         <a 
-        href="https://cs.uwatering.com/vinny-nguyen.vercel.app?nav=prev"
+        href="https://cs.uwatering.com/#vinny-nguyen.vercel.app?nav=prev"
         className="text-xl"
         >←</a>
         <a 
-          href="https://cs.uwatering.com/vinny-nguyen.vercel.app" 
+          href="https://cs.uwatering.com/#vinny-nguyen.vercel.app" 
           target='_blank'
           rel="noopener noreferrer">
             {/* Light mode */}
@@ -61,7 +61,7 @@ export default function Footer() {
             />
         </a>
         <a 
-          href="https://cs.uwatering.com/vinny-nguyen.vercel.app?nav=next"
+          href="https://cs.uwatering.com/#vinny-nguyen.vercel.app?nav=next"
           className="text-xl"
         >→</a>
       </div>
