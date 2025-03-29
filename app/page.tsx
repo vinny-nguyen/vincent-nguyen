@@ -87,7 +87,7 @@ export default function Page() {
           • Biking 🚵
         </p> */}
         <p>
-          Feel free to take a peek at my{" "}
+          Feel free to take a look at my{" "}
           <a href="photos">
             Photos
           </a>
