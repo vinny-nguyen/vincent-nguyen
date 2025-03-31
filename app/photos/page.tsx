@@ -43,13 +43,13 @@ export default function Photos() {
         ]}
       />
 
-      <ImageGrid
+      {/* <ImageGrid
         columns={2}
         images={[          
           { src: "/photos/Goose.png", alt: "Goose" },
           { src: "/photos/NiagaraRock.png", alt: "Niagara Rocks" },
         ]}
-      />
+      /> */}
 
       {/* <ImageGrid
         columns={2}
