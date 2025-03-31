@@ -36,18 +36,18 @@ export default function Photos() {
       <ImageGrid
         columns={2}
         images={[
-          { src: "/photos/FreddyYacht.png", alt: "Fall Lampost" },
-          { src: "/photos/FreddySunset.png", alt: "REV Leaves" },
-          { src: "/photos/NiagaraBoat.png", alt: "Autumn Leaves" },
-          { src: "/photos/ChurchSunet.png", alt: "MKV Leaves" },
+          { src: "/photos/FreddyYacht.png", alt: "Freddy Yacht" },
+          { src: "/photos/FreddySunset.png", alt: "Freddy Sunseet" },
+          { src: "/photos/NiagaraBoat.png", alt: "Niagara Boat" },
+          { src: "/photos/ChurchSunset.png", alt: "Church Sunset" },
         ]}
       />
 
       <ImageGrid
         columns={2}
         images={[          
-          { src: "/photos/Goose.png", alt: "REV Leaves" },
-          { src: "/photos/NiagaraRock.png", alt: "Autumn Leaves" },
+          { src: "/photos/Goose.png", alt: "Goose" },
+          { src: "/photos/NiagaraRock.png", alt: "Niagara Rocks" },
         ]}
       />
 
