@@ -23,7 +23,8 @@ export default function Page() {
           border-stone-200 dark:border-stone-700
           bg-stone-50 dark:bg-stone-800 shadow-lg 
             block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto
-            hover:grayscale-0 cursor-pointer"
+            hover:grayscale-0 cursor-pointer
+            transition-transform duration-300 hover:scale-105"
           // className="w-48 h-48 relative rounded-full border-2 border-stone-200 dark:border-stone-700 shadow-lg overflow-hidden bg-stone-50 dark:bg-stone-800"
           unoptimized
           width={160}
@@ -31,7 +32,11 @@ export default function Page() {
           priority
           onClick={OpenModal}
         />
-        <img className="absolute bottom-[-10px] right-[-10px] sm:bottom-[-30px] sm:right-[-20px] w-14 sm:w-20 text-4x1 block dark:hidden" style={{ opacity: 1, transform: "scale(1.1)" }}
+        <img className="
+        absolute bottom-[-10px] right-[-10px] 
+        sm:bottom-[-30px] sm:right-[-20px] 
+        w-14 sm:w-20 text-4x1 block dark:hidden
+        transition-transform duration-300 hover:scale-150" style={{ opacity: 1, transform: "scale(1.1)" }}
           draggable="false"
           alt="🔥"
           loading="lazy"
@@ -42,7 +47,11 @@ export default function Page() {
           // style={{ color: "transparent" }}   
         />
 
-        <img className="absolute bottom-[-10px] right-[-10px] sm:bottom-[-30px] sm:right-[-20px] w-14 sm:w-20 text-4x1 hidden dark:block" style={{ opacity: 1, transform: "scale(1.1)" }}
+        <img className="
+        absolute bottom-[-10px] right-[-10px]
+        sm:bottom-[-30px] sm:right-[-20px] 
+        w-14 sm:w-20 text-4x1 hidden dark:block
+        transition-transform duration-300 hover:scale-150" style={{ opacity: 1, transform: "scale(1.1)" }}
           draggable="false"
           alt="🪐"
           loading="lazy"
