@@ -9,7 +9,7 @@ export const metaData = {
 };
 
 export const socialLinks = {
-  // twitter: "https://x.com/1tssirius",
+  twitter: "https://x.com/vincent_png",
   github: "https://github.com/vinny-nguyen",
   instagram: "https://www.instagram.com/vincent.nguyen7/",
   linkedin: "https://www.linkedin.com/in/vincentpnguyen/",
