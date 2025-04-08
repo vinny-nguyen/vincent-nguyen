@@ -79,7 +79,7 @@ export default function Page() {
         </p>
         <p>
           Currently: <br></br>
-          • Software Developer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="_blank">Stealth Startup</a> 😎<br></br>
+          • Software Engineer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="_blank">Stealth Startup</a> 😎<br></br>
           • Software Developer @ <a href="https://www.uwaft.ca/" target="_blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
           • Web Developer @ <a href="https://electriummobility.com/" target="_blank">Electrium Mobility</a> 🚵
         </p>
