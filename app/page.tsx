@@ -112,9 +112,9 @@ export default function Page() {
           <a href="photos">
             Photos
           </a>
-          !
+          ! 👍
         </p>
-        <p>↳ OR check out <a href="projects">what I've built</a>!</p>
+        <p>↪ OR check out <a href="projects">what I've built</a>.</p>
       </div>
     </section>
   );
