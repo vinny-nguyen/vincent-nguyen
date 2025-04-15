@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import type { ThemeProviderProps } from "next-themes";
 import { FaCircleHalfStroke } from "react-icons/fa6";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 const storageKey = 'theme-preference';
 
@@ -64,13 +65,22 @@ export const ThemeSwitch: React.FC = () => {
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     localStorage.setItem(storageKey, newTheme);
     reflectPreference(newTheme);
+
+    if (newTheme == "dark") {
+      const CricketAudio = new Audio('/audio/crickettest.mp3');
+      CricketAudio.play();
+
+    } else {
+      const RoosterAudio = new Audio('/audio/roostertest.mp3');
+      RoosterAudio.play();
+    }
   };
 
   if (!mounted) {
     return (
-      <FaCircleHalfStroke
-        className="h-[14px] w-[14px] text-[#1c1c1c]"
-        aria-hidden="true"
+      <div
+        className="h-[14px] w-[14px]" // text-[#1c1c1c]
+        // aria-hidden="true"
       />
     );
   }
@@ -80,13 +90,25 @@ export const ThemeSwitch: React.FC = () => {
       id="theme-toggle"
       aria-label={`${currentTheme} mode`}
       onClick={toggleTheme}
-      className="flex items-center justify-center transition-opacity duration-300 hover:opacity-90"
+      className="
+      p-2 rounded-lg
+      flex items-center justify-center 
+      transition-opacity duration-300 
+      bg-white dark:bg-black
+      hover:bg-stone-200 dark:hover:bg-stone-800"
     >
-      <FaCircleHalfStroke
+      {currentTheme === "dark" ? (
+        <FiMoon className="h-[18px] w-[18px] text-[#D4D4D4]" />
+      ) : (
+
+        <FiSun className="h-[18px] w-[18px] text-[#1c1c1c]" />
+      )}
+
+      {/* <FaCircleHalfStroke
         className={`h-[14px] w-[14px] ${
           currentTheme === "dark" ? "text-[#D4D4D4]" : "text-[#1c1c1c]"
         }`}
-      />
+      /> */}
     </button>
   );
 };
