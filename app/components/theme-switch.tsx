@@ -95,7 +95,7 @@ export const ThemeSwitch: React.FC = () => {
       flex items-center justify-center 
       transition-opacity duration-300 
       bg-white dark:bg-black
-      hover:bg-stone-200 dark:hover:bg-stone-800"
+      hover:bg-stone-200 dark:hover:bg-stone-700"
     >
       {currentTheme === "dark" ? (
         <FiMoon className="h-[18px] w-[18px] text-[#D4D4D4]" />
