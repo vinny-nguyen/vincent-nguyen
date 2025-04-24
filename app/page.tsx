@@ -65,7 +65,7 @@ export default function Page() {
         absolute bottom-[-10px] right-[-10px]
         sm:bottom-[-30px] sm:right-[-20px] 
         w-14 sm:w-20 text-4x1 hidden dark:block
-        transition-transform duration-300 hover:scale-150" style={{ opacity: 1, transform: "scale(1.1)" }}
+        transition-transform duration-400 hover:scale-125" style={{ opacity: 1, transform: "scale(1.1)" }}
           draggable="false"
           alt="🪐"
           loading="lazy"
@@ -91,29 +91,21 @@ export default function Page() {
           Originally from <a 
             href="https://www.google.com/maps/place/Fredericton,+NB/@45.9454324,-66.7486524,18635m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4ca4220ba498fb2b:0xe7de2f297a415db4!8m2!3d45.9635895!4d-66.6431151!16zL20vMDJ3NzA!5m2!1e1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" 
             target="_blank"
-          > 
-          <LinkPreview
-            url="https://www.google.com/maps/place/Fredericton,+NB/@45.9454324,-66.7486524,18635m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4ca4220ba498fb2b:0xe7de2f297a415db4!8m2!3d45.9635895!4d-66.6431151!16zL20vMDJ3NzA!5m2!1e1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D">
+          >
             Fredericton, New Brunswick
-          </LinkPreview></a>
+            </a>
           , I'm currently studying CS @ <a 
             href="https://cs.uwaterloo.ca/" 
             target="blank"
             >
-            <LinkPreview
-              url="https://cs.uwaterloo.ca/">
               University of Waterloo
-            </LinkPreview>
           </a>.
         </p>
         <p>
           Currently: <br></br>
-          • Software Engineer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="blank">
-          <LinkPreview url="https://en.wikipedia.org/wiki/Stealth_startup">Stealth Startup</LinkPreview></a> 😎<br></br>
-          • Software Developer @ <a href="https://www.uwaft.ca/" target="blank">
-          <LinkPreview url="https://www.uwaft.ca/">UWaterloo EcoCAR Team</LinkPreview></a> ⚡<br></br>
-          • Web Developer @ <a href="https://electriummobility.com/" target="blank">
-          <LinkPreview url="https://electriummobility.com/">Electrium Mobility</LinkPreview></a> 🚵
+          • Software Engineer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="blank">Stealth Startup</a> 😎<br></br>
+          • Software Developer @ <a href="https://www.uwaft.ca/" target="blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
+          • Web Developer @ <a href="https://electriummobility.com/" target="blank">Electrium Mobility</a> 🚵
         </p>
 
         <button 
@@ -131,14 +123,11 @@ export default function Page() {
           Feel free to take a look at my{" "}
           <a
           href="photos">
-            <LinkPreview url="https://vinny-nguyen.vercel.app/photos">
               Photos
-            </LinkPreview>
           </a>
           ! 👍
         </p>
-        <p>↪ OR check out <a href="projects">
-          <LinkPreview url="https://vinny-nguyen.vercel.app/projects">what I've built</LinkPreview></a>.</p>
+        <p>↪ OR check out <a href="projects">what I've built</a>.</p>
       </div>
     </section>
   );
