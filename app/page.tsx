@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import { socialLinks } from "./config";
+import { LinkPreview } from "./components/link-preview";
 import ProfileImageModal from "./components/profile-modal";
 import { FiDownload } from "react-icons/fi";
+import Link from "next/link";
 
 export default function Page() {
 
@@ -86,14 +88,32 @@ export default function Page() {
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Originally from <a href="https://www.google.com/maps/place/Fredericton,+NB/@45.9454324,-66.7486524,18635m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4ca4220ba498fb2b:0xe7de2f297a415db4!8m2!3d45.9635895!4d-66.6431151!16zL20vMDJ3NzA!5m2!1e1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">Fredericton, New Brunswick</a>
-          , I'm currently studying CS @ <a href="https://cs.uwaterloo.ca/" target="_blank">University of Waterloo</a>.
+          Originally from <a 
+            href="https://www.google.com/maps/place/Fredericton,+NB/@45.9454324,-66.7486524,18635m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4ca4220ba498fb2b:0xe7de2f297a415db4!8m2!3d45.9635895!4d-66.6431151!16zL20vMDJ3NzA!5m2!1e1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" 
+            target="_blank"
+          > 
+          <LinkPreview
+            url="https://www.google.com/maps/place/Fredericton,+NB/@45.9454324,-66.7486524,18635m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4ca4220ba498fb2b:0xe7de2f297a415db4!8m2!3d45.9635895!4d-66.6431151!16zL20vMDJ3NzA!5m2!1e1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D">
+            Fredericton, New Brunswick
+          </LinkPreview></a>
+          , I'm currently studying CS @ <a 
+            href="https://cs.uwaterloo.ca/" 
+            target="blank"
+            >
+            <LinkPreview
+              url="https://cs.uwaterloo.ca/">
+              University of Waterloo
+            </LinkPreview>
+          </a>.
         </p>
         <p>
           Currently: <br></br>
-          • Software Engineer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="_blank">Stealth Startup</a> 😎<br></br>
-          • Software Developer @ <a href="https://www.uwaft.ca/" target="_blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
-          • Web Developer @ <a href="https://electriummobility.com/" target="_blank">Electrium Mobility</a> 🚵
+          • Software Engineer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="blank">
+          <LinkPreview url="https://en.wikipedia.org/wiki/Stealth_startup">Stealth Startup</LinkPreview></a> 😎<br></br>
+          • Software Developer @ <a href="https://www.uwaft.ca/" target="blank">
+          <LinkPreview url="https://www.uwaft.ca/">UWaterloo EcoCAR Team</LinkPreview></a> ⚡<br></br>
+          • Web Developer @ <a href="https://electriummobility.com/" target="blank">
+          <LinkPreview url="https://electriummobility.com/">Electrium Mobility</LinkPreview></a> 🚵
         </p>
 
         <button 
@@ -109,12 +129,16 @@ export default function Page() {
         </p> */}
         <p>
           Feel free to take a look at my{" "}
-          <a href="photos">
-            Photos
+          <a
+          href="photos">
+            <LinkPreview url="https://vinny-nguyen.vercel.app/photos">
+              Photos
+            </LinkPreview>
           </a>
           ! 👍
         </p>
-        <p>↪ OR check out <a href="projects">what I've built</a>.</p>
+        <p>↪ OR check out <a href="projects">
+          <LinkPreview url="https://vinny-nguyen.vercel.app/projects">what I've built</LinkPreview></a>.</p>
       </div>
     </section>
   );
