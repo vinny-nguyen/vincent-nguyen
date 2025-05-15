@@ -2,6 +2,11 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { projects } from "./project-data";
 
+// https://www.isaacjiang.ca/
+// https://aidensuh.com/#projects
+// https://www.danielquzhao.com/projects
+// https://ivan-yu.ca/
+
 export const metadata: Metadata = {
   title: "Projects",
   description: "Nextfolio Projects",
