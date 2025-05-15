@@ -18,7 +18,7 @@ export default function Page() {
     <section>
       <div className="relative w-52 h-52 mx-auto sm:float-right sm:ml-0 sm:mb-5 top-[-30px]">
         <Image
-          src="/pictures/vincentnguyentuff.png"
+          src="/pictures/vincentnguyenguitar.png"
           alt="Vincent Nguyen"
           className="
             rounded-full w-full h-full relative border-4
@@ -26,7 +26,7 @@ export default function Page() {
           bg-stone-50 dark:bg-stone-800 shadow-lg 
             block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto
             hover:grayscale-0 cursor-pointer
-            transition-transform duration-500 hover:scale-110
+            transition-transform duration-500 hover:scale-105
             group-hover:opacity-0"
           // className="w-48 h-48 relative rounded-full border-2 border-stone-200 dark:border-stone-700 shadow-lg overflow-hidden bg-stone-50 dark:bg-stone-800"
           unoptimized
