@@ -85,23 +85,35 @@ export default function Page() {
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
         Hi there, I'm Vincent! 👋
+          {/* <strong 
+            className=
+            "text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-cover bg-center px-2 py-0"
+            style={{
+              backgroundImage: "url('/pictures/ottawa.jpeg')",
+              textShadow: "rgba(252, 192, 0, 0.35) 0px 0px 15px",
+            
+            }}
+            >
+            Vincent
+          </strong>! 👋 */}
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Born and raised in Fredericton, New Brunswick
           {/* <a 
             href="https://www.google.com/maps/place/Fredericton,+NB/@45.9454324,-66.7486524,18635m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4ca4220ba498fb2b:0xe7de2f297a415db4!8m2!3d45.9635895!4d-66.6431151!16zL20vMDJ3NzA!5m2!1e1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" 
             target="_blank"
           >
             Fredericton, New Brunswick
             </a> */}
-          , currently studying CS @ <a 
+          Born in Saigon, Vietnam. Raised in Fredericton, 
+          New Brunswick. Currently studying CS @ <a 
             href="https://cs.uwaterloo.ca/" 
             target="blank"
             >
-              University of Waterloo
+              UWaterloo
           </a>.
         </p>
+
         <p>
           Recently: <br></br>
           • Software Engineer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="blank">Stealth Startup</a> 😎<br></br>

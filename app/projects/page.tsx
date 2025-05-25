@@ -2,11 +2,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { projects } from "./project-data";
 
-// Issac Jiang: https://www.isaacjiang.ca/
-// Aiden Suh: https://aidensuh.com/#projects
-// Daniel Zhao: https://www.danielquzhao.com/projects
+// Victor Huang: https://victorhuang.vercel.app/
 // Ivan Yu: https://ivan-yu.ca/
 // Nash Weissberg: https://h4kyu.dev/
+// Daniel Zhao: https://www.danielquzhao.com/projects
+// Issac Jiang: https://www.isaacjiang.ca/
+// Aiden Suh: https://aidensuh.com/#projects
 
 export const metadata: Metadata = {
   title: "Projects",
