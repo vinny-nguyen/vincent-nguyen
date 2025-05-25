@@ -105,12 +105,11 @@ export default function Page() {
           >
             Fredericton, New Brunswick
             </a> */}
-          Born in Saigon, Vietnam. Raised in Fredericton, 
-          New Brunswick. Currently studying CS @ <a 
+          Originally raised in Fredericton, New Brunswick. Currently studying CS @ <a 
             href="https://cs.uwaterloo.ca/" 
             target="blank"
             >
-              UWaterloo
+              University of Waterloo
           </a>.
         </p>
 
