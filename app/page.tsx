@@ -105,7 +105,7 @@ export default function Page() {
           >
             Fredericton, New Brunswick
             </a> */}
-          Originally raised in Fredericton, New Brunswick. Currently studying CS @ <a 
+          Grew up in Fredericton, New Brunswick, Canada. Currently studying CS @ <a 
             href="https://cs.uwaterloo.ca/" 
             target="blank"
             >
