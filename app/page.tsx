@@ -115,7 +115,7 @@ export default function Page() {
 
         <p>
           Recently: <br></br>
-          • Software Developer Intern @ <a href="https://squirrelridge.org/" target="blank">Squirrel Ridge</a> 🐿️<br></br>
+          • Software Engineer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="blank">Stealth</a> 🐿️<br></br>
           • Software Developer @ <a href="https://www.uwaft.ca/" target="blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
           • Web Developer @ <a href="https://electriummobility.com/" target="blank">Electrium Mobility</a> 🚵
         </p>
