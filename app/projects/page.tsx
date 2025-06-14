@@ -8,6 +8,7 @@ import { projects } from "./project-data";
 // Daniel Zhao: https://www.danielquzhao.com/projects
 // Issac Jiang: https://www.isaacjiang.ca/
 // Aiden Suh: https://aidensuh.com/#projects
+// Kevin Valencia: https://kvalencia.vercel.app/
 
 export const metadata: Metadata = {
   title: "Projects",
