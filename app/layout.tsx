@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    icon: "/pictures/vincentnguyenguitarwhite.png",
+    icon: "/pictures/Vancouver, British Columbia.jpeg",
   },
 };
 

@@ -7,6 +7,13 @@ import { LinkPreview } from "./components/link-preview";
 import ProfileImageModal from "./components/profile-modal";
 import { FiDownload } from "react-icons/fi";
 import Link from "next/link";
+import Typewriter from "./components/typewriter";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function Page() {
 
@@ -98,19 +105,38 @@ export default function Page() {
           </strong>! 👋 */}
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
-        <p>
+        <p className={`text-3xl font-bold tracking-tight ${playfair.className}`}>
           {/* <a 
             href="https://www.google.com/maps/place/Fredericton,+NB/@45.9454324,-66.7486524,18635m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4ca4220ba498fb2b:0xe7de2f297a415db4!8m2!3d45.9635895!4d-66.6431151!16zL20vMDJ3NzA!5m2!1e1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" 
             target="_blank"
           >
             Fredericton, New Brunswick
-            </a> */}
-          Grew up in Fredericton, New Brunswick, Canada. Currently studying CS @ <a 
+          </a> */}
+
+          {/* Grew up in Fredericton, New Brunswick, Canada. Currently studying CS @ <a 
             href="https://cs.uwaterloo.ca/" 
             target="blank"
             >
               University of Waterloo
-          </a>.
+          </a>. */}
+          <div
+  className="bg-[url('/pictures/Los Angeles, California.png')] bg-cover bg-center bg-clip-text"
+          >
+            <Typewriter 
+              className=""
+              phrases={[
+                "CS @ UWaterloo.",
+                "Full Stack Developer.",
+                "AI & ML Developer.",
+                "C# & .NET Developer.",
+                "Firmware Developer.",
+
+                "Jazz Pianist & Guitarist.",
+                "Mountain Biker.",
+                "Photographer.",
+              ]}
+            />
+          </div>
         </p>
 
         <p>
