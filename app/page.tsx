@@ -8,12 +8,30 @@ import ProfileImageModal from "./components/profile-modal";
 import { FiDownload } from "react-icons/fi";
 import Link from "next/link";
 import Typewriter from "./components/typewriter";
+
+// Fonts for Typewriter text:
 import { Playfair_Display } from "next/font/google";
+import { Schoolbell } from "next/font/google";
+import { Sixtyfour } from "next/font/google";
+import { Special_Elite } from "next/font/google";
+import { Libre_Caslon_Display } from "next/font/google";
+import { Coming_Soon } from "next/font/google";
+import { Gloria_Hallelujah } from "next/font/google";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400"],
 });
+
+const elite = Special_Elite({
+  subsets: ["latin"],
+  weight: ["400"]
+})
+
+const halleluja = Gloria_Hallelujah({
+  subsets: ["latin"],
+  weight: ["400"]
+})
 
 export default function Page() {
 
@@ -105,6 +123,7 @@ export default function Page() {
           </strong>! 👋 */}
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
+        {/* Alternating Fonts:  */}
         <p className={`text-3xl font-bold tracking-tight ${playfair.className}`}>
           {/* <a 
             href="https://www.google.com/maps/place/Fredericton,+NB/@45.9454324,-66.7486524,18635m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4ca4220ba498fb2b:0xe7de2f297a415db4!8m2!3d45.9635895!4d-66.6431151!16zL20vMDJ3NzA!5m2!1e1!1e4?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" 
@@ -120,22 +139,26 @@ export default function Page() {
               University of Waterloo
           </a>. */}
           <div
-  className="bg-[url('/pictures/Los Angeles, California.png')] bg-cover bg-center bg-clip-text"
+            className="bg-[url('/pictures/Los Angeles, California.png')] bg-cover bg-center bg-clip-text"
           >
-            <Typewriter 
-              className=""
-              phrases={[
-                "CS @ UWaterloo.",
-                "Full Stack Developer.",
-                "AI & ML Developer.",
-                "C# & .NET Developer.",
-                "Firmware Developer.",
-
-                "Jazz Pianist & Guitarist.",
-                "Mountain Biker.",
-                "Photographer.",
-              ]}
-            />
+            <div
+              className="h-[1em] flex items-center transition-all duration-200"
+              style={{ minHeight: "1em" }} // Adjust as needed for your tallest font
+            >
+              <Typewriter 
+                className=""
+                phrases={[
+                  "CS @ UWaterloo.",
+                  "Full Stack Developer.",
+                  "AI & ML Developer.",
+                  "C# & .NET Developer.",
+                  "Firmware Developer.",
+        
+                  "Jazz Pianist & Guitarist.",
+                  "Photographer.",
+                ]}
+              />
+            </div>
           </div>
         </p>
 

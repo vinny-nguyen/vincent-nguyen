@@ -1,6 +1,26 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
+// Fonts for Typewriter text:
+import { Playfair_Display } from "next/font/google";
+import { Special_Elite } from "next/font/google";
+import { Gloria_Hallelujah } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const elite = Special_Elite({
+  subsets: ["latin"],
+  weight: ["400"]
+})
+
+const halleluja = Gloria_Hallelujah({
+  subsets: ["latin"],
+  weight: ["400"]
+})
+
 interface TypewriterProps {
   phrases: string[];
   typingSpeed?: number;
@@ -8,6 +28,14 @@ interface TypewriterProps {
   pauseTime?: number;
   className?: string;
 }
+
+// ...existing code...
+
+const fontClasses = [
+  playfair.className,
+  elite.className,
+  halleluja.className,
+];
 
 const Typewriter: React.FC<TypewriterProps> = ({
   phrases,
@@ -20,6 +48,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [showCursor, setShowCursor] = useState(true);
+  const [fontIndex, setFontIndex] = useState(() => Math.floor(Math.random() * fontClasses.length));
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {
@@ -45,20 +74,18 @@ const Typewriter: React.FC<TypewriterProps> = ({
     } else if (isDeleting && text.length === 0) {
       timeout = setTimeout(() => {
         setIsDeleting(false);
-        let nextIndex = phraseIndex;
-        if (phrases.length > 1) {
-          while (nextIndex === phraseIndex) {
-            nextIndex = Math.floor(Math.random() * phrases.length);
-          }
-        }
-        setPhraseIndex(nextIndex);
+        setPhraseIndex((i) => {
+          const nextIndex = (i + 1) % phrases.length;
+          setFontIndex(Math.floor(Math.random() * fontClasses.length));
+          return nextIndex;
+        });
       }, 400);
     }
     return () => clearTimeout(timeout);
   }, [text, isDeleting, phraseIndex, phrases, typingSpeed, deletingSpeed, pauseTime]);
 
   return (
-    <span className={className}>
+    <span className={`${className} ${fontClasses[fontIndex]}`}>
       {text}
       <span style={{ opacity: showCursor ? 1 : 0 }} className="inline-block w-2 animate-blink">
         |
@@ -66,5 +93,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
     </span>
   );
 };
+
+// ...existing code...
 
 export default Typewriter;
