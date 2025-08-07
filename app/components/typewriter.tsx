@@ -32,8 +32,6 @@ interface TypewriterProps {
 // ...existing code...
 
 const fontClasses = [
-  playfair.className,
-  elite.className,
   halleluja.className,
 ];
 
