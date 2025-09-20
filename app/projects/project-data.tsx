@@ -11,6 +11,26 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Shoppy", 
+    year: 2025,
+    description: "Hack the North 2025", 
+    url: "https://github.com/MankyDanky/shoppy",
+    github: "",
+    summary: "", 
+    tags: [],
+    picture: "", 
+  },
+  {
+    title: "Sentilysis", 
+    year: 2025,
+    description: "SpurHacks 2025", 
+    url: "https://github.com/vinny-nguyen/sentilysis",
+    github: "",
+    summary: "", 
+    tags: [],
+    picture: "", 
+  },
+  {
     title: "TheRiffler", 
     year: 2025,
     description: "Hack Canada 2025 Finalist 🏆", 
