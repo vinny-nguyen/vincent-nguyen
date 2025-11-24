@@ -10,8 +10,18 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+    title: "🌇 Manhattanhenge", 
+    year: 2025,
+    description: "Hack Western 12 Winner 🏆", 
+    url: "https://github.com/vinny-nguyen/manhattanhenge",
+    github: "",
+    summary: "", 
+    tags: [],
+    picture: "", 
+  },
   {
-    title: "Shoppy", 
+    title: "🛍️ Shoppy", 
     year: 2025,
     description: "Hack the North 2025", 
     url: "https://github.com/MankyDanky/shoppy",
@@ -21,7 +31,7 @@ export const projects: Project[] = [
     picture: "", 
   },
   {
-    title: "Sentilysis", 
+    title: "📉 Sentilysis", 
     year: 2025,
     description: "SpurHacks 2025", 
     url: "https://github.com/vinny-nguyen/sentilysis",
@@ -31,7 +41,7 @@ export const projects: Project[] = [
     picture: "", 
   },
   {
-    title: "TheRiffler", 
+    title: "🎸 TheRiffler", 
     year: 2025,
     description: "Hack Canada 2025 Finalist 🏆", 
     url: "https://github.com/vinny-nguyen/TheRiffler",
@@ -41,7 +51,7 @@ export const projects: Project[] = [
     picture: "", 
   },
   {
-    title: "OuiCare",
+    title: "⚕️ OuiCare",
     year: 2025,
     description: "DeltaHacks XI",
     url: "https://github.com/shadielfares/deltahacks",
@@ -51,7 +61,7 @@ export const projects: Project[] = [
     picture: "",
   },
   {
-    title: "WatClub",
+    title: "📚 WatClub",
     year: 2024,
     description: "UW CS Club Best Project 🏆",
     url: "https://github.com/Brucewang15/WatClub",
@@ -61,7 +71,7 @@ export const projects: Project[] = [
     picture: "",
   },
   {
-    title: "IntroSpectacle",
+    title: "👓 IntroSpectacle",
     year: 2024,
     description: "Hack the North 2024",
     url: "https://github.com/vinny-nguyen/IntroSpectacle",
