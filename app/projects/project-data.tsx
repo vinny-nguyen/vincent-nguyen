@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     title: "🎸 TheRiffler", 
     year: 2025,
-    description: "Hack Canada 2025 Finalist 🏆", 
+    description: "Hack Canada 2025 Winner 🏆", 
     url: "https://github.com/vinny-nguyen/TheRiffler",
     github: "",
     summary: "", 
