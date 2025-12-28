@@ -167,8 +167,9 @@ export default function Page() {
           {/* • Software Engineer Intern @ <a href="https://en.wikipedia.org/wiki/Stealth_startup" target="blank">Stealth</a> 😎<br></br>
           • Software Developer @ <a href="https://www.uwaft.ca/" target="blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
           • Web Developer @ <a href="https://electriummobility.com/" target="blank">Electrium Mobility</a> 🚵 */}
-          • Software Developer Intern @ <a href="https://www.advantive.com/" target="blank">Advantive</a> 😎<br></br>
-          • Built a self-playing guitar @ <a href="https://staging.hackcanada.org/" target="blank">Hack Canada 2025</a> 🎸<br></br>
+          • Prev. Software Developer Intern @ <a href="https://www.advantive.com/" target="blank">Advantive</a> 🏭<br></br>
+          • Built <a href="https://www.manhattanhenge.tech/">Manhattanhenge</a> and won <a href="https://www.hackwestern.com/" target="blank">Hack Western</a> 🌇<br></br>
+          • Built a <a href="https://github.com/vinny-nguyen/TheRiffler">self-playing guitar</a> and won <a href="https://staging.hackcanada.org/" target="blank">Hack Canada</a> 🎸<br></br>
           • Biking & running around Kitchener-Waterloo, say hi!
         </p>
 
