@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
-import clsx from "clsx";
 import { socialLinks } from "./config";
 import { LinkPreview } from "./components/link-preview";
 import ProfileImageModal from "./components/profile-modal";
@@ -171,10 +170,6 @@ export default function Page() {
           • Prev. Software Developer Intern @ <a href="https://www.advantive.com/" target="blank">Advantive</a> 🏭<br></br>
           • Built <a href="https://www.manhattanhenge.tech/">Manhattanhenge</a> and won <a href="https://www.hackwestern.com/" target="blank">Hack Western</a> 🌇<br></br>
           • Built a <a href="https://github.com/vinny-nguyen/TheRiffler">self-playing guitar</a> and won <a href="https://staging.hackcanada.org/" target="blank">Hack Canada</a> 🎸<br></br>
-        </p>
-
-        <p>
-          Seeking 2026 SWE Internships, feel free to reach out :)
         </p>
 
         <button 
