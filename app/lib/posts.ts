@@ -13,6 +13,11 @@ type Metadata = {
 function parseFrontmatter(fileContent: string) {
   let frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
   let match = frontmatterRegex.exec(fileContent);
+
+  if (!match) {
+    return { metadata: {} as Metadata, content: fileContent.trim() };
+  }
+
   let frontMatterBlock = match![1];
   let content = fileContent.replace(frontmatterRegex, "").trim();
   let frontMatterLines = frontMatterBlock.trim().split("\n");
@@ -55,7 +60,11 @@ export function getBlogPosts() {
   return getMDXData(path.join(process.cwd(), "content"));
 }
 
-export function formatDate(date: string, includeRelative = false) {
+export function formatDate(date: string | undefined, includeRelative = false) {
+  if (!date) {
+    return "";
+  }
+
   let currentDate = new Date();
   if (!date.includes("T")) {
     date = `${date}T00:00:00`;
