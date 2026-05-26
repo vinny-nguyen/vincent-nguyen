@@ -168,7 +168,7 @@ export default function Page() {
           • Software Developer @ <a href="https://www.uwaft.ca/" target="blank">UWaterloo EcoCAR Team</a> ⚡<br></br>
           • Web Developer @ <a href="https://electriummobility.com/" target="blank">Electrium Mobility</a> 🚵 */}
           • Software Engineer Intern @ <a href="https://www.shopify.com/ca" target="blank">Shopify</a> 🟩<br></br>
-          • Prev. Software Developer Intern @ <a href="https://www.advantive.com/" target="blank">Advantive</a> 🏭<br></br>
+          • Prev. Software Developer Intern @ <a href="https://www.advantive.com/" target="blank">Advantive</a> 🟧<br></br>
           • Built <a href="https://www.manhattanhenge.tech/">Manhattanhenge</a> and won <a href="https://www.hackwestern.com/" target="blank">Hack Western</a> 🌇<br></br>
           • Built a <a href="https://github.com/vinny-nguyen/TheRiffler">self-playing guitar</a> and won <a href="https://staging.hackcanada.org/" target="blank">Hack Canada</a> 🎸<br></br>
         </p>
